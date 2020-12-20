@@ -37,6 +37,7 @@ class IPTracker{
             .then(res => res.json())
             .then(data => {
                 const {location}=data;
+                if(!location.city) return;
                 const {city,country,postalCode,timezone,lat,lng}=location;
                 this.city=city;
                 this.country=country;
