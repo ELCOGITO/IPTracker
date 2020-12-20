@@ -1,0 +1,21 @@
+$fontSize:18px;
+
+$font-family:(
+    "main":'Rubik',
+    "second":'arial',
+    "serif":'sans-serif'
+);
+$font-weights:(
+    "normal":400,
+    "medium":500,
+    "bold":700
+);
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:map-get($font-family,main);
+}

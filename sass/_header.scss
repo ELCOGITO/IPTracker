@@ -1,0 +1,49 @@
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:30vh;
+    background-image: url("../../images/pattern-bg.png");
+    background-position: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    &__title{
+        color:white;
+        font-size:$fontSize*2;
+    }
+    &__form{
+        width:90%;
+        height:10vh;
+        margin-bottom:30px;
+        background-color: red;
+        border-radius:20px;
+        display:flex;
+        &-input{
+            width:80%;
+            border-radius:20px 0 0 20px;
+            padding-left:20px;
+            border:none;
+        }
+        &-btn{
+            flex-grow:1;
+            border-radius:0 20px 20px 0;
+            border:none;
+            background-color: black;
+            cursor:pointer;
+        }
+    }
+}
+@media(min-width:750px){
+    .header__form{
+        width:60%;
+        height:7vh;
+    }
+}
+@media(min-width:1100px){
+    .header__form{
+        height:9vh;
+    }
+}
